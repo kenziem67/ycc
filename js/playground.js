@@ -1,6 +1,6 @@
 var playground = {
     "type": "Feature",
-    "properties": {"name":"Can-Do Playground"
+    "properties": {"name":"Can-Do Playground", "description":"Fun for everyone! The Can-Do Playground is Alapocas Run State Park's accessible playground"
     },
     "geometry": {
       "coordinates": [

@@ -42,7 +42,7 @@
 <center><h3> Wilmington, Delaware </h3></center>
 
 <footer>
-       <p> Share this template! <br> https://github.com/kenziem67 </p>
+       <p> Share this template! <br> https://github.com/kenziem67/ycc.git </p>
 </footer>
 
     <div id="map" style=" position: fixed; right: 0; left: 300px; top: 0; bottom: 0 "></div>
@@ -69,9 +69,9 @@
 
 // Create a style variable
     var myStyle = {
-    radius: 5,
-    fillColor: "#FFFF00",
-    color: "#FFFF00",
+    // radius: 5,
+    fillColor: "#ff0088",
+    color: "#000",
     weight: 1,
     opacity: 1,
     fillOpacity: 0.7
@@ -79,33 +79,33 @@
 
 //Load in geojson
     var trailhead =   L.geoJSON(trailhead, {
-        //   style: myStyle
+        style: myStyle
         }).bindPopup(function (layer) {
-       return "" + layer.feature.properties.name
+       return "" + layer.feature.properties.name + ": " + layer.feature.properties.description
     }).addTo(map).bringToBack();
 
     var barn =   L.geoJSON(barn, {
         //   style: myStyle
         }).bindPopup(function (layer) {
-       return "" + layer.feature.properties.name
+       return "" + layer.feature.properties.name + ": " + layer.feature.properties.description
     }).addTo(map).bringToBack();
 
     var playground =   L.geoJSON(playground, {
         //   style: myStyle
         }).bindPopup(function (layer) {
-       return "" + layer.feature.properties.name
+       return "" + layer.feature.properties.name + ": " + layer.feature.properties.description
     }).addTo(map).bringToBack();
 
     var zoo =   L.geoJSON(zoo, {
         //   style: myStyle
         }).bindPopup(function (layer) {
-       return "" + layer.feature.properties.name
+       return "" + layer.feature.properties.name + ": " + layer.feature.properties.description
     }).addTo(map).bringToBack();
 
     var rockford =   L.geoJSON(rockford, {
         //   style: myStyle
         }).bindPopup(function (layer) {
-       return "" + layer.feature.properties.name
+       return "" + layer.feature.properties.name + ": " + layer.feature.properties.description
     }).addTo(map).bringToBack();
 
     var sugarBowl =   L.geoJSON(sugarBowl, {
@@ -135,13 +135,13 @@
     var bridge =   L.geoJSON(bridge, {
         //   style: myStyle
         }).bindPopup(function (layer) {
-       return "" + layer.feature.properties.name
+       return "" + layer.feature.properties.name + ": " + layer.feature.properties.description
     }).addTo(map).bringToBack();
 
     var stadium =   L.geoJSON(stadium, {
         //   style: myStyle
         }).bindPopup(function (layer) {
-       return "" + layer.feature.properties.name
+       return "" + layer.feature.properties.name 
     }).addTo(map).bringToBack();
     </script>
 

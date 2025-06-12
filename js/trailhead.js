@@ -7,6 +7,7 @@ var trailhead = {
        "name":"APW Trailhead",
        "event":"YCC", 
        "marker-color": "#f5ec00",
+       "description": "Explore wooded trails and beautiful views in the Alapocas Woods. Perfect for moderate hiking"
       },
       "geometry": {
         "coordinates": [
